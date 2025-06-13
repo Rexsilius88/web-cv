@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Rizky Armansyah Purba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="profile.jpg" alt="Foto Rizky" class="profile-img">
+      <h1>Rizky Armansyah Purba</h1>
+      <p>Siswa RPL | Web Developer | Flutter Enthusiast</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah siswa Rekayasa Perangkat Lunak yang sedang magang di PT Rezeki Teknologi Indonesia. Saya tertarik dalam pengembangan website menggunakan Flutter, WordPress, dan HTML/CSS.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Keahlian</h2>
+
+      <div class="skill">
+        <p>HTML & CSS</p>
+        <div class="skill-bar"><div class="fill" style="width: 90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Flutter</p>
+        <div class="skill-bar"><div class="fill" style="width: 80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>WordPress</p>
+        <div class="skill-bar"><div class="fill" style="width: 75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <p>Canva Design</p>
+        <div class="skill-bar"><div class="fill" style="width: 85%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Kontak</h2>
+      <p>Email: rizkyarmasyah1311@gmail.com</p>
+      <p>WhatsApp: 082278689949</p>
+      <p>Instagram: <a href="https://instagram.com/rizky.purba" target="_blank">@rizky.purba</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Rizky Armansyah Purba</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
