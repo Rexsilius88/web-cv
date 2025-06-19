@@ -1,113 +1,98 @@
-
+# HTML versi lengkap berdasarkan data Rizky
+full_html = """
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rizky Armansyah Purba</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
     }
-    .top-section {
-      background-color: #1c2b6c;
-      color: white;
+    header {
       text-align: center;
-      padding: 40px 20px 20px;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
+      padding: 60px 20px 30px;
     }
-    .top-section img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 15px;
-    }
-    .top-section h1 {
-      font-size: 1.8rem;
+    header h1 {
+      font-size: 2.8rem;
       margin-bottom: 10px;
     }
-    .top-section p {
-      font-size: 1rem;
-      line-height: 1.4;
+    header p {
+      font-size: 1.2rem;
     }
-    .container {
-      padding: 30px 20px;
+    section {
       max-width: 700px;
-      margin: auto;
+      margin: 0 auto;
+      padding: 20px;
     }
     h2 {
-      font-size: 1.2rem;
-      color: #1c2b6c;
-      margin-top: 30px;
-      border-left: 4px solid #1c2b6c;
-      padding-left: 10px;
-      margin-bottom: 10px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      margin-top: 40px;
     }
-    .edu-item, .exp-item {
-      margin-bottom: 15px;
+    .edu-table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    .edu-item strong {
-      display: block;
-      color: #1c2b6c;
+    .edu-table td, .edu-table th {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
     }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 8px;
+    .edu-table th {
+      text-align: left;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="top-section">
-    <img src="profile.jpg" alt="Rizky Armansyah Purba">
-    <h1>Rizky Armansyah Purba</h1>
-    <p>Saya adalah siswa SMK Multi Karya Medan jurusan RPL (Rekayasa Perangkat Lunak).<br>Saya bertanggung jawab, disiplin, dan jujur serta tertarik dengan teknologi, desain, dan pengembangan web.</p>
-  </div>
+  <header>
+    <h1>Hi, I’m Rizky Armansyah Purba</h1>
+    <p>Siswa Rekayasa Perangkat Lunak</p>
+    <p>Bersemangat dalam dunia teknologi, pemrograman, dan pengembangan aplikasi.</p>
+  </header>
 
-  <div class="container">
-    <h2>Pendidikan</h2>
-    <div class="edu-item">
-      <strong>2014–2020</strong>
-      SD SABILA AMANDA
-    </div>
-    <div class="edu-item">
-      <strong>2020–2023</strong>
-      SMPN 4 MEDAN
-    </div>
-    <div class="edu-item">
-      <strong>2023–Sekarang</strong>
-      SMK MULTI KARYA
-    </div>
+  <section>
+    <h2>About Me</h2>
+    <p>Saya adalah seorang pelajar jurusan Rekayasa Perangkat Lunak yang antusias dalam dunia teknologi, desain, dan pengembangan web. Saat ini saya sedang memperdalam keahlian di bidang IoT, UI/UX Design, dan pengembangan web. Saya percaya bahwa teknologi bisa menjadi solusi kreatif untuk berbagai masalah sehari-hari.</p>
+  </section>
 
-    <h2>Pengalaman</h2>
-    <ul>
-      <li>Mengerjakan proyek website visual menggunakan HTML, CSS</li>
-      <li>Membuat aplikasi sederhana menggunakan Flutter & Firebase</li>
-      <li>Mengelola desain menggunakan Canva dan Figma</li>
-    </ul>
-
-    <h2>Kontak</h2>
-    <ul>
-      <li>📞 082278689949</li>
-      <li>📧 rizkyarmasyah1311@gmail.com</li>
-    </ul>
-
-    <h2>Kemampuan</h2>
-    <ul>
-      <li>Desain Web / Figma / Canva</li>
-      <li>Flutter, HTML, CSS</li>
-      <li>Ms.Word & Ms.Excel</li>
-    </ul>
-  </div>
+  <section>
+    <h2>Riwayat Pendidikan</h2>
+    <table class="edu-table">
+      <tr>
+        <th>Jenjang</th>
+        <th>Nama Sekolah</th>
+        <th>Tahun</th>
+      </tr>
+      <tr>
+        <td>SD</td>
+        <td>SD SABILA AMANDA</td>
+        <td>2014–2020</td>
+      </tr>
+      <tr>
+        <td>SMP</td>
+        <td>SMPN 4 MEDAN</td>
+        <td>2020–2023</td>
+      </tr>
+      <tr>
+        <td>SMK</td>
+        <td>SMK MULTI KARYA</td>
+        <td>2023–SEKARANG</td>
+      </tr>
+    </table>
+  </section>
 </body>
 </html>
+"""
+
+# Simpan sebagai file index.html
+final_index_path = Path("/mnt/data/index.html")
+final_index_path.write_text(full_html, encoding="utf-8")
+
+final_index_path.name
