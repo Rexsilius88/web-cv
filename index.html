@@ -1,57 +1,14 @@
-# HTML versi lengkap berdasarkan data Rizky
-full_html = """
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rizky Armansyah Purba</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px 30px;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h2 {
-      border-bottom: 2px solid #fff;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-    .edu-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .edu-table td, .edu-table th {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-    .edu-table th {
-      text-align: left;
-      color: #ccc;
-    }
-  </style>
+   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <img src="profile.jpg" alt="Foto Profil Rizky" />
     <h1>Hi, I’m Rizky Armansyah Purba</h1>
     <p>Siswa Rekayasa Perangkat Lunak</p>
     <p>Bersemangat dalam dunia teknologi, pemrograman, dan pengembangan aplikasi.</p>
@@ -59,7 +16,9 @@ full_html = """
 
   <section>
     <h2>About Me</h2>
-    <p>Saya adalah seorang pelajar jurusan Rekayasa Perangkat Lunak yang antusias dalam dunia teknologi, desain, dan pengembangan web. Saat ini saya sedang memperdalam keahlian di bidang IoT, UI/UX Design, dan pengembangan web. Saya percaya bahwa teknologi bisa menjadi solusi kreatif untuk berbagai masalah sehari-hari.</p>
+    <p>Saya adalah seorang pelajar jurusan Rekayasa Perangkat Lunak yang antusias dalam dunia teknologi, desain, dan pengembangan web. 
+      Saat ini saya sedang memperdalam keahlian di bidang IoT, UI/UX Design, dan pengembangan web. Saya percaya bahwa teknologi bisa menjadi solusi kreatif 
+      untuk berbagai masalah sehari-hari.</p>
   </section>
 
   <section>
@@ -89,10 +48,3 @@ full_html = """
   </section>
 </body>
 </html>
-"""
-
-# Simpan sebagai file index.html
-final_index_path = Path("/mnt/data/index.html")
-final_index_path.write_text(full_html, encoding="utf-8")
-
-final_index_path.name
